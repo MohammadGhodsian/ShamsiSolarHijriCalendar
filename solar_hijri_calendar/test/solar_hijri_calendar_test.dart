@@ -1,12 +1,15 @@
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:solar_hijri_calendar/solar_hijri_calendar.dart';
 
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
+  group('SolarHijriCalendar', () {
+    test('Greeting test', () {
+      final solarHijriCalendar = SolarHijriCalendar();
+      const name = 'Misagh';
+      final greeting = solarHijriCalendar.greet(name);
+      expect(greeting, 'Hello from SolarHijriCalendar. Your name is $name!');
+    });
+
+    // Add more tests for other methods or functionality as needed
   });
 }

@@ -1,7 +1,9 @@
+// lib/solar_hijri_calendar.dart
+
 library solar_hijri_calendar;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+class SolarHijriCalendar {
+  String greet(String name) {
+    return 'Hello from SolarHijriCalendar. Your name is $name!';
+  }
 }
